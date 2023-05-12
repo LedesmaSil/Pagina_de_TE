@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;  
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+
+h1,h2,h3,h4,h5{
+    color: rgb(63,63,5);
+}
+
+
+h2{
+    padding-bottom: 1rem;    
+    font-weight: 500;
+    text-transform: uppercase;      
+    font-size: 3rem; 
+}
+
+h3{    
+    
+    font-weight: 500;
+}
+
+p{
+    padding: 1rem 0rem;
+    
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.titulo_secciones{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#flex-container1_forms{
+padding: 0px;
+margin-bottom: 2rem;
+float: left;
+margin: 15px;
+width: 100%;
+list-style-type: none;
+}
+
+.flex-item_datos_personales{
+padding: .5rem;
+display: inline;
+float: left;
+width: 30%;
+}
+
+#flex-container2_forms{
+padding: 1px;
+margin-bottom:2rem;
+float: left;
+margin: 15px;
+width: 100%;
+list-style-type: none;
+}
+
+.flex-item_experiencias{
+padding: .5rem;
+
+}
+
+#exp_notas{
+    display: flex;
+    align-items: center;    
+}
+
+footer section{
+    margin-top: 1rem;
+    }
+footer h4{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    text-decoration:none;
+    color: rgb(63, 63, 5);
+    /*color:#000;*/
+}
+
+#footer_info{
+    min-height: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+
+.fa-solid{
+    /*color: #000;*/
+    color: rgb(63, 63, 5);
+    font-size: 1.25rem;
+}
+
+.fa-brands{
+     /*color: #000;*/
+     color: rgb(63, 63, 5);
+    font-size: 1.25rem;
+}
+
+.fa-brands:hover{
+    color: #fafafa;
+}
+
+#copyright_section{
+    color: #292020;
+    text-align: center;
+    padding: 1rem;
+}

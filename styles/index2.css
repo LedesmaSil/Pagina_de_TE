@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+    margin: 0;  
+}
+html{
+    background-color: rgb(228, 236, 178);
+}
+
+h1,h2,h3,h4,h5{
+    color: rgb(63,63,5);
+}
+
+img{
+    object-fit:contain ;
+    width:100%;
+    /*height:100%; lo comento para ver si no desplaza al boton 
+    */
+}
+
+
+
+
+
+header{    
+    padding:1rem 1rem;
+    background-color: rgba(228, 236, 178, 0.75);
+    top: 0;  
+    /*position: sticky; */   
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#logoCamellia{
+    width: 40%;
+    height:auto;
+    /*object-fit: contain;*/
+    /*padding-top: 1 rem;
+    padding-left: 1rem;*/
+}
+
+header h1{   
+    padding-top: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    /*font-weight: 500;
+    text-transform: uppercase;  
+    font-size: 2rem; 
+    width: 30%;*/
+}
+   
+
+header ul{
+    padding: 2rem 1rem; 
+    font-size: 1rem; 
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  
+    
+}
+
+
+header a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(63,63,5);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;  
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #817979;
+    
+
+}
+
+
+main{
+    padding: 1rem;
+}
+
+#main_title{
+    padding: 1rem;
+    color: rgb(63, 63, 5);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem; 
+    font-weight: 500;
+    text-transform: uppercase;  
+    text-align: center; 
+} 
+
+
+
+
+#flex-conteiner1{
+    border: solid blue ;
+    padding: 1rem;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    height: auto;
+    align-content: center;
+    row-gap: 2rem;
+    /*column-gap: 0.1rem;*/
+}
+
+#flex-conteiner1 h2{  
+    padding:1rem;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    /*text-align: center;*/
+    font-size: 1.5rem; 
+    font-weight: 500;
+    
+
+
+}
+.flex-item1{
+    padding: 1rem;
+    border: 2px solid rgb(63, 63, 5);
+    border-radius: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width: 90%;
+    max-width: 30rem;
+    
+
+    
+}
+
+#flex-conteiner1 article button{
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: beige;
+    border-style: solid;
+   
+}
+
+#flex-conteiner1 article button a{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color:  rgb(63, 63, 5);
+    font-weight: bold;
+    
+}
+
+
+
+#campos_de_te{
+    /*object-fit: cover;*/
+    /*object-fit: contain;*/
+    display: block;
+    width:70%;
+    height:auto;
+    margin: auto;
+    
+    
+}
+/*
+#te_hebras{
+    /*object-fit: contain;*//*
+    padding-bottom: 1rem;
+    display: flex;
+    width: 100%;
+    height:100%;
+}
+#te_infusor{
+    /*object-fit: contain;*//*
+    padding-bottom: 1rem;
+    display: flex;
+    width: 100%;
+    height:100%;
+}*/
+
+p{
+    padding: 0rem 1rem;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+}
+#flex-conteiner2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item2{
+    text-align: center;
+    width: 90%;
+    
+   
+}
+            
+
+
+
+footer section{
+    margin-top: 1rem;
+    }
+footer h4{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500 bold;
+    text-transform: uppercase;
+    
+}
+footer ul{
+    list-style: none;
+    
+}
+
+footer a{
+    text-decoration:none;
+    color: rgb(63, 63, 5);
+    /*color:#000;*/
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;  
+    text-transform: uppercase;  
+    font-weight: bold;
+}
+
+
+#footer_info{
+    min-height: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+
+.contacto a{
+    text-transform: lowercase;
+}
+.redes a{
+    text-transform:capitalize;
+}
+
+.fa-solid{
+    /*color: #000;*/
+    color: rgb(63, 63, 5);
+    font-size: 1.25rem;
+}
+
+.fa-brands{
+     /*color: #000;*/
+    color: rgb(63, 63, 5);
+    font-size: 1.25rem;
+}
+
+.fa-brands:hover{
+    color: #fafafa;
+}
+
+#copyright_section{
+    color: #292020;
+    text-align: center;
+    padding: 1rem;
+}
+/*
+@media screen and (min-widht:550px){
+    header{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .logo{
+        flex-direction: row;
+    }
+
+
+    }
+*/
