@@ -22,128 +22,186 @@
 </head>
 <body>
     <header>
-        <section id="logo">
-        
-                <img src="./img/Logo tacita camellia_con borde final.png" id="logoCamellia" alt="Logo Camellia">
-                <h1>CAMELLIA TE DE AUTOR EN HEBRAS</h1>
-    
+        <section id="section_logo">
+            <img src="./img/Logo tacita camellia_con borde final.png" id="logoCamellia" alt="Logo Camellia">
+            <h1>CAMELLIA TE DE AUTOR EN HEBRAS</h1>
         </section>
-
+        
         <section id="nav_menu">
-
         <nav> 
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li> <a href="beneficios.html">Beneficios del Te</a> </li>
+                <li><a href="beneficios.html">Beneficios del Te</a> </li>
                 <li><a href="trabajaconnos.html">Trabaja con Nosotros</a> </li>
-                <li> <a href="contacto.html">Contacto</a> </li>  
+                <li><a href="contacto.html">Contacto</a> </li>  
             </ul> 
         </nav>  
-        
-        </section>
+        </section>   
     </header>
+  
 
     <main>
-       <!-- <section>
-            <img src="./img/seccion-en-construccion.png" alt="Sección en Construcción">
-        </section> -->
-        <h2>¿Te gustaria formar parte de CAMELLIA?</h2>
-            <h3>Dejanos tus datos y nos pondremos en contacto</h3> 
-                <p>CAMELLIA está 
-                en constante evolución y nos gustaría contar con personas emprendedoras y 
-                amantes del té para formar grupos de trabajo</p>              
+       <section>
+            <h2>¿Te gustaria formar parte de CAMELLIA?</h2>
+                <h3>Dejanos tus datos y nos pondremos en contacto</h3> 
+                    <p>CAMELLIA está 
+                    en constante evolución y nos gustaría contar con personas emprendedoras y 
+                    amantes del té para formar grupos de trabajo</p> 
+        </section>             
                     
-               <section class="form_trabajaconnos" >
-                    <form  action="#" method="get" >                      
-                      <fieldset> <legend class="titulo_secciones" id="flex-container1_forms">Datos Personales</legend>
-                        <section id="datos_personales" >                               
-                            <article class="flex-item_datos_personales" id="datos_personales_nombre">
-                                <label for="name">Nombre</label>
-                                <input type="text" id="name" name="name" maxlength="2" required>          
-                            </article>
-                            <article class="flex-item_datos_personales" id="datos_personales_apellido">
-                                <label for="lastname">Apellido</label>
-                                <input type="text" id="lastname" name="lastname" maxlength="" required>
-                            </article>
-                            <article class="flex-item_datos_personales" id="datos_personales_DNI">                        
-                                <!--Ingresar Datos Tipo Numero -->                                
-                                <label for="dni">DNI</label>
-                                <input type="number" id="dni" name="dni" min="0" max="">
-                            </article>                           
-                            <article class="flex-item_datos_personales" id="id="datos_personales_mail">
-                                <label for="email">Mail</label>
-                                <input type="email" name="email" id="email" placeholder="Ej:nombre@xxxx.xxx">
-                            </article>  
-                            <article class="flex-item_datos_personales" id="id="datos_personales_fecha_nacimiento">  
-                                <label for="date">Fecha de Nacimiento</label>
-                                <input type="date" name="date" id="date">
-                            </article> 
-                        </section> 
-                      </fieldset>
-              
-                      <fieldset> <legend class="titulo_secciones" id="flex-container2_forms">Experiencias en el Maravilloso Mundo del Té</legend>              
-                        <section id="seccion-preferencias">
-                            <article class="flex-item_experiencias" id="exp_prefemcias">
-                                <label for="tipo_Te">Cuales son tus preferidos</label>
-                                <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Té Negro" checked="Té Negro">Té Negro
-                                <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Té Matcha">Té Matcha
-                                <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Te Verde">Te Verde
-                                <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Te Blanco">Te Blanco
-                                <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Té Rojo">Té Rojo
-                                <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Té Azul (Oolong)">Té Azul (Oolong)
-                            </article>   
-                            <article class="flex-item_experiencias" id=""exp_archivos>                              
-                                <label for="cv">Envíanos tus datos</label>
-                                <input type="file" name="cv" id="cv" accept=".pdf" multiple>
-                            </article>  
-                            <article class="flex-item_experiencias" id=" exp_redes">
-                                <label for="">Ingresa tu Instagram o Facebook</label>
-                                <input type="url" name="url" id="url">
-                            </article>  
-                            <article class="flex-item_experiencias" id="exp_notas">
-                                <label for="descrition id="experiencia" >Contanos Tu Experiencia</label>
-                                <textarea name="description" id="description" cols="115" rows="10"></textarea>
-                            </article> 
-                        </section> 
-                      </fieldset>              
-                                  
-                      <button type="submit">Enviar</button>
-                      <button type="reset">Borrar</button>
-              
-                    </form>        
+        <section class="form_trabajaconnos" >
+                   <!---- <form  action="#" method="get" >  -->
+            <form name="form_datos">                      
+                <fieldset> <legend class="titulo_secciones" id="flex-container1_forms">Datos Personales</legend>
+                <section id="datos_personales" >                               
+                    <article class="flex-item_datos_personales" id="datos_personales_nombre">
+                        <label for="name">Nombre</label>
+                         <input type="text" id="name" name="name"> 
+                         <p id="mensaje_nombre" class="msg_alert"></p>       
+                    </article>
+                    <article class="flex-item_datos_personales" id="datos_personales_apellido">
+                        <label for="lastname">Apellido</label>
+                        <input type="text" id="lastname" name="lastname">
+                        <p id="mensaje_apellido" class="msg_alert"></p>
+                    </article>
+                    <article class="flex-item_datos_personales" id="datos_personales_DNI">                        
+                        <!--Ingresar Datos Tipo Texto -->                                
+                        <label for="dni">DNI</label>
+                        <input type="text" id="dni" name="dni">
+                        <p id="mensaje_dni" class="msg_alert"></p>
+                    </article>                           
+                    <article class="flex-item_datos_personales" id="id="datos_personales_mail">
+                        <label for="email">Mail</label>
+                        <input type="email" name="email" id="email" placeholder="Ej:nombre@xxxx.xxx">
+                    </article>  
+                    <article class="flex-item_datos_personales" id="id="datos_personales_fecha_nacimiento">  
+                                <label for="date">Edad</label>
+                                <input type="number" name="age" id="age">
+                                <p id="mensaje_edad" class="msg_alert"></p>
+                    </article> 
+                </section> 
+                </fieldset>
+        
+                <fieldset> <legend class="titulo_secciones" id="flex-container2_forms">Experiencias en el Maravilloso Mundo del Té</legend>              
+                <section id="seccion-preferencias">
+                    <article class="flex-item_experiencias" id="exp_prefemcias">
+                        <label for="tipo_Te">Cuales son tus preferidos</label>
+                        <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Té Negro" checked="Té Negro">Té Negro
+                        <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Té Matcha">Té Matcha
+                        <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Te Verde">Te Verde
+                        <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Te Blanco">Te Blanco
+                        <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Té Rojo">Té Rojo
+                        <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Té Azul (Oolong)">Té Azul (Oolong)
+                    </article>   
+                    <article class="flex-item_experiencias" id=""exp_archivos>                              
+                        <label for="cv">Envíanos tus datos</label>
+                        <input type="file" name="cv" id="cv" accept=".pdf" multiple>
+                    </article>  
+                    <article class="flex-item_experiencias" id=" exp_redes">
+                        <label for="">Ingresa tu Instagram o Facebook</label>
+                        <input type="url" name="url" id="url">
+                    </article>  
+                    <article class="flex-item_experiencias" id="exp_notas">
+                        <label for="description" id="experiencia" >Contanos Tu Experiencia</label>
+                        <textarea name="description" id="description" cols="115" rows="10"></textarea>
+                    </article> 
+                </section> 
+                </fieldset>              
+                            
+                <!--<button type="submit">Enviar</button>-->
+                <button type="button" onclick="validar()">Enviar</button> 
+                <button type="reset" onclick="limpiarFormulario()">Borrar</button>
+                
+        
+            </form>        
 
-                </section>        
+                </section>  
+                
+                <script>
+
+                    
+                    function validar(){
+
+                        const nombre = document.getElementById("name").value;
+                        console.log(nombre);
+                        const msg_nombre = document.getElementById("mensaje_nombre");
+
+                        if(nombre.length < 2){
+                            msg_nombre.innerHTML = "Debe Ingresar un Nombre válido"                        
+                        }else{            
+                             }
+
+                        const apellido = document.getElementById("lastname").value;
+                        console.log(apellido);
+                        const msg_apellido = document.getElementById("mensaje_apellido");
+
+                        if(apellido.length < 2){
+                            msg_apellido.innerHTML = "Debe Ingresar un Apellido válido"                        
+                        }else{       
+                             }
+
+                        const documento = document.getElementById("dni").value;
+                        console.log(documento);
+                        const msg_dni = document.getElementById("mensaje_dni");
+
+                        if(documento.length < 6){
+                            msg_dni.innerHTML = "Debe Ingresar un minimo de 6 caracteres"                     
+                        }else{       
+                             }
+
+                        const edad = document.getElementById("dni").value;
+                        console.log(edad);
+                        const msg_edad = document.getElementById("mensaje_edad");
+
+                        if(edad < 17){
+                            msg_edad.innerHTML = "Debes ser mayor de edad para participar"                     
+                        }else{       
+                             }
+                     }
+
+                     
+                        function limpiarFormulario() {
+                            document.getElementById("form_datos").reset();
+                        }
+
+
+                </script>
     </main>
     
     <footer>
         <section id="footer_info">
             <section>
                 <h4>Navegación</h4> <!--le cambie el h2 por un h4-->
-                <nav>
+                <nav id="footer_nav">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="productos.html">Productos</a></li>
                         <li><a href="beneficios.html">Beneficios del Te </a></li>
                         <li><a href="trabajaconnos.html">Trabaja con Nosotros</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav> 
             </section>
 
 
-            <section>
+            <section id="contacto">
                 <h4>Contactanos</h4> <!--le cambie el h2 por un h4-->
                 <nav>
                     <ul>
-                      <li><a href="#"><i class="fa-solid fa-square-phone"></i>Teléfono de contacto</a></li>
-                      <li><a href="#"><i class="fa-solid fa-square-envelope"></i>Mail de contacto</a></li>
+                      <li><a href="#"><i class="fa-solid fa-square-phone"></i>1158863084</a></li>
+                      <li><a href="#"><i class="fa-solid fa-square-envelope"></i>te_camellia@gmail.com</a></li>
                     </ul>
-                  </nav>
+                </nav>
             </section>
-            <section>
+
+            <section id="redes_social">
                 <h4>Redes Sociales</h4> <!--le cambie el h2 por un h4-->
-                <nav>
-                    <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
-                    <a href="#"><i class="fa-brands fa-square-instagram"></i>Instagram</a>
+                <nav class="redes">
+                    <ul>
+                        <li><a href="https://www.facebook.com/arteenhebras/?locale=es_LA" target="_blank"><i class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/arte_hebrasdeautor/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+                    </ul>
                 </nav>
             </section>
         </section>
@@ -152,5 +210,6 @@
                 <p>&copy; Copyright Camellia Té de autor - 2023 - Todos los derechos reservados</p>
         </section>
     </footer>
+    
 </body>
 </html>
