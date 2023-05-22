@@ -53,6 +53,15 @@ float: left;
 width: 30%;
 }
 
+#flex-item_provincia{
+padding: .5rem;
+display: inline;
+float: left;
+width: 20%;   
+}
+
+
+
 #flex-container2_forms{
 padding: 1px;
 margin-bottom:2rem;

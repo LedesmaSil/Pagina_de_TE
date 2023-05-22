@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;  
+}
+html{
+    background-color: rgb(228, 236, 178);
+}
+
+h1,h2,h3,h4,h5{
+    color: rgb(63,63,5);
+}
+
+
+
+header{    
+    padding:1rem;
+    background-color:rgb(131, 199, 54);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+   
+}
+
+
+#section_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+#logoCamellia{
+    width: 15%;
+    height:auto;
+    min-width: 150px;
+    
+    
+}
+
+header h1{ 
+    margin-left: 1rem;  
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    text-transform: uppercase;  
+    font-size: 5vh; 
+    
+}
+   
+header ul{
+    padding-top: 1rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+   
+    
+}
+
+
+header a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(63,63,5);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;  
+    font-weight: bold;
+}
+
+
+
+header a:hover{
+    color: white;
+    
+
+}
+
+#enconstruccion{
+    display: block;
+    width: 20%;
+    height: auto;
+    margin: auto;
+    padding-top: 1rem;
+   
+}
+
+
+p{
+    padding: 0rem 1rem;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25rem;
+}
+
+
+footer{
+    background-color:rgb(131, 199, 54);
+    
+}
+
+footer section{
+    margin: 1rem;
+}
+
+footer h4{
+    margin: 0.5rem;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+       
+}
+footer ul{
+    list-style: none;
+    
+}
+
+footer a{
+    text-decoration:none;
+    color: rgb(63, 63, 5);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;  
+    text-transform: uppercase;  
+    font-weight: bold;
+    
+    
+    
+}
+
+
+#footer_info{
+    min-height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    
+
+  
+}
+
+#footer_nav a:hover{
+    color: white;
+}
+
+footer li{
+    padding: 0.25rem;
+}
+
+#contacto a{
+    text-transform: lowercase;
+}
+
+#redes_social{
+    margin-left: -4rem;
+}
+
+.redes a{
+    text-transform:capitalize;
+    
+}
+
+.fa-solid{
+    color: rgb(63, 63, 5);
+    font-size: 1.25rem;
+}
+
+.fa-brands{
+    color: rgb(63, 63, 5);
+    font-size: 1.25rem;
+    
+}
+
+.fa-brands:hover{
+    color: #fafafa;
+}
+
+#copyright_section{
+    color: #292020;
+    text-align: center;
+    padding: 1rem;
+    
+}
+#copyright_section p{
+    font-size: 1rem;
+}
+
+
+

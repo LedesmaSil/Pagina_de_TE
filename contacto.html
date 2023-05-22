@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <!--Conexión con el archivo css-->
     <!--<link rel="stylesheet" href="./styles/index.css">-->
-    <link rel="stylesheet" href="./styles/index2.css">
+    <link rel="stylesheet" href="./styles/contacto.css">
 
     <link rel="icon" type="image/jpg" href="./img/faviconTea.png"/>
 
@@ -18,24 +19,32 @@
     <!--Font Awesome--para incorporar iconos-->
     <script src="https://kit.fontawesome.com/c43d4998cc.js" crossorigin="anonymous"></script>
 
+
+
 </head>
 <body>
     <header>
-        <h1>CAMELLIA TE DE AUTOR EN HEBRAS</h1>
+        <section id="section_logo">
+            <img src="./img/Logo tacita camellia_con borde final.png" id="logoCamellia" alt="Logo Camellia">
+            <h1>CAMELLIA TE DE AUTOR EN HEBRAS</h1>
+        </section>
+        
+        <section id="nav_menu">
         <nav> 
             <ul>
-                <li>  <a href="index.html">Inicio</a></li>
-                <li>  <a href="productos.html">Productos</a></li> 
-                <li>  <a href="beneficios.html">Beneficios del Te</a></li> 
-                <li>  <a href="trabajaconnos.html">Trabaja con Nosotros</a></li> 
-                <li>  <a href="contacto.html">Contacto</a></li> 
-            </ul>
-        </nav>            
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="beneficios.html">Beneficios del Te</a> </li>
+                <li><a href="trabajaconnos.html">Trabaja con Nosotros</a> </li>
+                <li><a href="contacto.html">Contacto</a> </li>  
+            </ul> 
+        </nav>  
+        </section>       
     </header>
 
     <main>
         <section>
-            <img src="./img/seccion-en-construccion.png" alt="Sección en Construcción">
+            <img src="./img/seccion-en-construccion.png" alt="Sección en Construcción" id="enconstruccion">
         </section>
     </main>
     
@@ -43,30 +52,35 @@
         <section id="footer_info">
             <section>
                 <h4>Navegación</h4> <!--le cambie el h2 por un h4-->
-                <nav>
+                <nav id="footer_nav">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="productos.html">Productos</a></li>
                         <li><a href="beneficios.html">Beneficios del Te </a></li>
                         <li><a href="trabajaconnos.html">Trabaja con Nosotros</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav> 
             </section>
 
 
-            <section>
+            <section id="contacto">
                 <h4>Contactanos</h4> <!--le cambie el h2 por un h4-->
                 <nav>
                     <ul>
-                      <li><a href="#"><i class="fa-solid fa-square-phone"></i>Teléfono de contacto</a></li>
-                      <li><a href="#"><i class="fa-solid fa-square-envelope"></i>Mail de contacto</a></li>
+                      <li><a href="#"><i class="fa-solid fa-square-phone"></i>1158863084</a></li>
+                      <li><a href="#"><i class="fa-solid fa-square-envelope"></i>te_camellia@gmail.com</a></li>
                     </ul>
-                  </nav>
+                </nav>
             </section>
-            <section>
+
+            <section id="redes_social">
                 <h4>Redes Sociales</h4> <!--le cambie el h2 por un h4-->
-                <nav>
-                    <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
-                    <a href="#"><i class="fa-brands fa-square-instagram"></i>Instagram</a>
+                <nav class="redes">
+                    <ul>
+                        <li><a href="https://www.facebook.com/arteenhebras/?locale=es_LA" target="_blank"><i class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/arte_hebrasdeautor/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+                    </ul>
                 </nav>
             </section>
         </section>
@@ -74,6 +88,7 @@
         <section id="copyright_section">
                 <p>&copy; Copyright Camellia Té de autor - 2023 - Todos los derechos reservados</p>
         </section>
+        
     </footer>
 </body>
 </html>

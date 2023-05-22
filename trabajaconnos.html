@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabaja con Nosotros</title>
-    <!--<link rel="stylesheet" href="./styles/index.css">-->
-    <link rel="stylesheet" href="./styles/index2.css">
+    
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/trabajaconnos.css">
 
     <link rel="icon" type="image/jpg" href="./img/faviconTea.png"/>
@@ -18,7 +18,9 @@
 
     <!--Font Awesome--para incorporar iconos-->
     <script src="https://kit.fontawesome.com/c43d4998cc.js" crossorigin="anonymous"></script>
-
+    
+    <!--Conexión con archivo JS-->
+    <!--<script src="js/trabajaconnos.js"></script>-->
 </head>
 <body>
     <header>
@@ -71,21 +73,39 @@
                         <input type="text" id="dni" name="dni">
                         <p id="mensaje_dni" class="msg_alert"></p>
                     </article>                           
-                    <article class="flex-item_datos_personales" id="id="datos_personales_mail">
+                    <article class="flex-item_datos_personales" id="datos_personales_mail">
                         <label for="email">Mail</label>
                         <input type="email" name="email" id="email" placeholder="Ej:nombre@xxxx.xxx">
                     </article>  
-                    <article class="flex-item_datos_personales" id="id="datos_personales_fecha_nacimiento">  
+                    <article class="flex-item_datos_personales" id="datos_personales_fecha_nacimiento">  
                                 <label for="date">Edad</label>
                                 <input type="number" name="age" id="age">
                                 <p id="mensaje_edad" class="msg_alert"></p>
                     </article> 
+                    
+                    
                 </section> 
+                 <!--Aqui consumo de API --> 
+                <section id="flex-item_provincia">  
+                     
+                       <label>Provincia de Residencia</label>
+                           <select id="selectProvincias">
+                               <option value="Elegi tu provincia">Elegi tu provincia</option>    
+                           </select>       
+                           <span></span>
+                  
+                       <script src="js/trabajaconnos.js"></script>
+                   </section> 
+
+
                 </fieldset>
-        
+                
+                
+
+
                 <fieldset> <legend class="titulo_secciones" id="flex-container2_forms">Experiencias en el Maravilloso Mundo del Té</legend>              
                 <section id="seccion-preferencias">
-                    <article class="flex-item_experiencias" id="exp_prefemcias">
+                    <article class="flex-item_experiencias">
                         <label for="tipo_Te">Cuales son tus preferidos</label>
                         <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Té Negro" checked="Té Negro">Té Negro
                         <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Té Matcha">Té Matcha
@@ -94,16 +114,16 @@
                         <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Té Rojo">Té Rojo
                         <input type="checkbox" name="tipo_Te" id="tipo_Te" value="Té Azul (Oolong)">Té Azul (Oolong)
                     </article>   
-                    <article class="flex-item_experiencias" id=""exp_archivos>                              
+                    <article class="flex-item_experiencias">                              
                         <label for="cv">Envíanos tus datos</label>
                         <input type="file" name="cv" id="cv" accept=".pdf" multiple>
                     </article>  
-                    <article class="flex-item_experiencias" id=" exp_redes">
+                    <article class="flex-item_experiencias">
                         <label for="">Ingresa tu Instagram o Facebook</label>
                         <input type="url" name="url" id="url">
                     </article>  
-                    <article class="flex-item_experiencias" id="exp_notas">
-                        <label for="description" id="experiencia" >Contanos Tu Experiencia</label>
+                    <article class="flex-item_experiencias">
+                        <label for="description" id="experiencia" >Contanos sobre tu experiencia laboral </label>
                         <textarea name="description" id="description" cols="115" rows="10"></textarea>
                     </article> 
                 </section> 

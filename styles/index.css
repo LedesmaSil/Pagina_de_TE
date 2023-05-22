@@ -1,13 +1,18 @@
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0;  
 }
-
 html{
     background-color: rgb(228, 236, 178);
 }
 
-header{
+h1,h2,h3,h4,h5{
+    color: rgb(63,63,5);
+}
+
+
+
+header{    
     padding:1rem;
     background-color:rgb(131, 199, 54);
     display: flex;
@@ -15,13 +20,17 @@ header{
     flex-wrap: wrap;
     height: auto;
     justify-content: center;
+   
 }
+
 
 #section_logo{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
+
 }
 
 
@@ -29,23 +38,29 @@ header{
     width: 15%;
     height:auto;
     min-width: 150px;
+    
+    
 }
 
+header h1{ 
+    margin-left: 1rem;  
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    text-transform: uppercase;  
+    font-size: 5vh; 
+    
+}
+   
 header ul{
     padding-top: 1rem;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+   
+    
 }
 
-header h1{   
-    margin-left: 1rem;  
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    text-transform: uppercase;  
-    font-size: 5vh;
-}
 
 header a{
     text-transform: uppercase;
@@ -56,75 +71,115 @@ header a{
     font-weight: bold;
 }
 
+
+
 header a:hover{
     color: white;
+    
+
 }
 
-main{
-    padding: 1rem;
-}
 
-h1,h3,h4{
-    padding:1rem;
-    font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    color: rgb(63,63,5);
-}
-
-.Titulo{
+.main_title{
     margin-top: 2rem;
     padding: 1rem;
-    font-family: 'Quicksand', sans-serif;
     color: rgb(63, 63, 5);
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.75rem; 
     font-weight: 500;
     text-transform: uppercase;  
     text-align: center; 
-    width:100%;
-}
+} 
 
-#productos, #accesorios{
+
+#campos_de_te{
+
+    display: block;
+    width:60%;
+    height:auto;
+    margin: auto;
+    /*position: relative;
+    top: 1rem;*/
+    padding-top: 1rem;
+} 
+#campos_text {
+    padding: 1rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3vw; 
+    /*font-weight: 500;*/
+    text-transform: uppercase; 
     text-align: center; 
-    font-size: 1.5rem; 
-    text-transform: uppercase;
-	margin-bottom: 2rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	height: auto;
-	align-content: center;
-    flex-wrap: wrap;
-    font-weight: 100;
-    align-content: space-around;
-    padding: 1rem;
-    row-gap: 4rem;
-    column-gap: 1rem;  
+    position: relative;
+    bottom: 5rem;
+
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
-.flex-item{
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 200%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+#main_title2{
+    /*margin-top: 0rem;*/
+    /*paddin-top: 1rem;*/
+    padding-bottom: 1rem;
+    color: rgb(63, 63, 5);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem; 
+    font-weight: 500;
+    text-transform: uppercase;  
+    text-align: center; 
+
+}
+
+img{
+    object-fit:contain ;
+    width:80%;
+   
+}
+
+#flex-conteiner1{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+   
+}
+
+#flex-conteiner1 h2{  
+    padding:1rem;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem; 
+
+    
+}
+.flex-item1{
     padding: 1rem;
-    border: 2px solid rgb(63, 63, 5);
+    border: 2px solid rgb(63,63,5);
     border-radius: 1rem;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     width: 60%;
     max-width: 30rem;
     margin-top: 2rem;
-}
 
-article:hover{
-    transform: scale(1.1, 1.1);
-}
-
-img{
-    object-fit:contain;
-    width: 80%;
     
 }
 
-
-article button{
+#flex-conteiner1 article button{
     font-size: 1rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -135,22 +190,51 @@ article button{
    
 }
 
-article a{
+#flex-conteiner1 article button a{
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     color:  rgb(63, 63, 5);
     font-weight: bold;
+    
 }
+
+
 
 p{
     padding: 0rem 1rem;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.25rem;
+    
+    
+
 }
+#flex-conteiner2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.flex-item2{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 90%;   
+      
+}
+
+.flex-item2 iframe{
+    max-width: 90%;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+}
+
+        
 
 footer{
     background-color:rgb(131, 199, 54);
+    
 }
 
 footer section{
@@ -161,11 +245,12 @@ footer h4{
     margin: 0.5rem;
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
-    font-size: 1.25rem;   
+    font-size: 1.25rem;
+       
 }
-
 footer ul{
-    list-style: none; 
+    list-style: none;
+    
 }
 
 footer a{
@@ -174,14 +259,21 @@ footer a{
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;  
     text-transform: uppercase;  
-    font-weight: bold; 
+    font-weight: bold;
+    
+    
+    
 }
+
 
 #footer_info{
     min-height: 10rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
+    
+
+  
 }
 
 #footer_nav a:hover{
@@ -201,7 +293,8 @@ footer li{
 }
 
 .redes a{
-    text-transform:capitalize; 
+    text-transform:capitalize;
+    
 }
 
 .fa-solid{
@@ -211,7 +304,8 @@ footer li{
 
 .fa-brands{
     color: rgb(63, 63, 5);
-    font-size: 1.25rem;  
+    font-size: 1.25rem;
+    
 }
 
 .fa-brands:hover{
@@ -221,9 +315,12 @@ footer li{
 #copyright_section{
     color: #292020;
     text-align: center;
-    padding: 1rem;  
+    padding: 1rem;
+    
 }
-
 #copyright_section p{
     font-size: 1rem;
 }
+
+
+
